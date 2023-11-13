@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+:root
+{
+    --color-fire: #ff7402;
+	--color-grass: #9bcc50;
+	--color-steel: #9eb7b8;
+	--color-water: #4592c4;
+	--color-psychic: #f366b9;
+	--color-ground: #ab9842;
+	--color-ice: #51c4e7;
+	--color-flying: #3dc7ef;
+	--color-ghost: #4d5b64;
+	--color-normal: #a4acaf;
+	--color-poison: #7e0058;
+	--color-rock: #a38c21;
+	--color-fighting: #d56723;
+	--color-dark: #707070;
+	--color-bug: #729f3f;
+	--color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+	--color-electric: #bba909;
+	--color-fairy: #fdb9e9;
+	--color-shadow: #7b62a3;
+	--color-unknow: #757575;
+
+	--color-primary: #006d77;
+	--color-primary-hover: #83c5be;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat';
+}
+
+/* Globales */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 40px 0;
+}
+
+.logo img{
+    width: 130px;
+}
+
+header form{
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid #555;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.form-group input{
+    font-family: inherit;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.icon-search{
+    width: 20px;
+    height: 20px;
+    stroke: #555;
+}
+
+.btn-search{
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-family: inherit;
+    padding: 15px 30px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-search:hover{
+    background-color: var(--color-primary-hover);
+    color: #000;
+}
+
+/* btn filter */
+.container-filter{
+    display: flex;
+}
+.icon-filter{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.icon-filter .icon{
+    width: 30px;
+    height: 30px;
+    stroke: #555;
+}
+
+/* Card List */
+.card-list-channels{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+}
+
+.card-channels{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-img {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 280px;
+}
+
+
+/* ... Tu código CSS anterior ... */
+
+.card-img {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 280px;
+}
+
+.card-img img {
+    width: 100%; /* Haz que las imágenes ocupen el 100% del contenedor */
+    max-height: 100%; /* Limita la altura máxima al 100% del contenedor */
+    object-fit: contain; /* Escalar y recortar la imagen para que se ajuste al contenedor */
+    border-radius: 5px; /* Mismo borde redondeado que el contenedor */
+}
+
+.card-info {
+    padding: 15px;
+}
+
+/* ... Tu código CSS anterior ... */
+
+
+.channels-id{
+    display: block;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.channel-types{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.channel-types span{
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Tipos */
+
+.Infantil{
+    background-color: var(--color-fairy);
+}
+
+.NoDisponibles{
+    background-color: var(--color-unknow);
+}
+
+.Disponibles{
+    background-color: var(--color-bug);
+}
+
+.Juvenil{
+    background-color: var(--color-fighting);
+}
+
+.container-filters{
+    display: flex;
+    justify-content: center;
+    left: -300px;
+    position: fixed;
+    top: 0;
+   
+    
+    width: 165px;
+    
+    color: #555;
+    background-color: #f2f2f2;
+    height: 100%;
+    padding-top: 140px;
+    transition: all .3s linear;
+}
+
+.container-filters.active {
+    left: 0;
+}
+
+.filter-by-type{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.filter-by-type span{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.group-type{
+    display: flex;
+    gap: 10px;
+
+    margin-left: 15px;
+}
+
+.group-type label{
+    cursor: pointer;
+}
+
+/* Estilos Paginas De Canales */
+
+.main-Canal{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.header-main-Canal{
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.number-Canal{
+    position: static;
+    top: -40px;
+    left: 0;
+
+    font-size: 200px;
+    font-weight: 700;
+    color: black;
+}
+
+.container-img-Canal{
+  order: 2;
+  flex: 1;
+  padding: 25px 25px 25px 0;
+}
+
+.container-img-Canal img{
+    width: 100;
+}
+
+.container-info-Canal{
+    display: flex;
+    flex-direction: column;
+
+    order: 1;
+    flex: 1;
+}
+
+.container-info-Canal h1{
+    text-align: right;
+    font-size: 50px;
+}
+
+.info-Canal{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.group-info p{
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.01rem 0.2%; /* Reducido el padding aún más */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Opcional: Ajusta la altura del logo en el footer si es necesario */
+.logo {
+    height: 5px; /* Ajusta según sea necesario */
+    margin-bottom: 0.005rem; /* Ajusta según sea necesario */
+}
+
+.social-icons-container,
+.footer-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0.005rem; /* Reducido el margin-bottom */
+}
+
+.menu-item {
+    margin: 0.001rem 0.1rem; /* Reducido el margin aún más */
+    font-size: 10px; /* Reducido el tamaño de letra */
+}
+
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Facebook_icon_%28black%29.svg/2048px-Facebook_icon_%28black%29.svg.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(https://freelogopng.com/images/all_img/1683191308instagram-logo-black-and-white.png);
+    
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png);
+    
+}
+
+.social-icon:nth-of-type(4){
+    background-image: url(https://seeklogo.com/images/T/threads-logo-1ABBA246BE-seeklogo.com.png);
+    
+}
+
+.footer-menu-container{
+    list-style-type: none;
+    color: #f2f2f2;
+}
+
+.footer-menu-contact{
+    font-size: 15px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-item:hover{
+    opacity: 1;
+}
+
