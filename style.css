@@ -436,3 +436,31 @@ footer {
     width: 1300px;
 }
 
+.modal{
+    width: 900px;
+    box-shadow: 1px 0px 43px -7px rgba(0,0,0,0.8);
+    border: 1px solid black;
+    border-radius: 10px;
+    line-height: 30px;
+    outline: none;
+    text-align: justify;
+    margin: auto;
+}
+
+.modal h1{
+    padding-top: 15px;
+}
+
+.modal::backdrop{
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.close-button{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.open-button{
+    cursor: pointer;
+}
