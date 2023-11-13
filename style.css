@@ -337,6 +337,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 
 /* Opcional: Ajusta la altura del logo en el footer si es necesario */
@@ -352,6 +353,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 0.005rem; /* Reducido el margin-bottom */
+
 }
 
 .menu-item {
@@ -403,6 +405,14 @@ footer {
     color: #f2f2f2;
 }
 
+.footer-menu-contact li{
+    list-style: none;
+}
+
+.footer-menu-contact li a{
+    color: white;
+}
+
 .menu-item{
     margin: 1rem 1.5rem;
     cursor: pointer;
@@ -411,5 +421,18 @@ footer {
 
 .menu-item:hover{
     opacity: 1;
+}
+
+.welcome{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,50,0.8)), url("assets/current-list-of-channels-for-tveverywhere.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 1300px;
 }
 
