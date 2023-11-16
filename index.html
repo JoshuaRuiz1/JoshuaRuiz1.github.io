@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WikiTV</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/tv.ico">
 </head>
 <body>
     <header class="container">
@@ -22,26 +23,21 @@
                     />
                 </svg>
                 
-                <input type="search" placeholder="Buscar Canales">
+                <input type="search" id="searchInput" placeholder="Buscar Canales">
             </div>
 
             <button class="btn-search">Buscar</button>
         </form>
     </header>
         
- <div class="container-filter container">
-    <div class="icon-filter">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-        </svg>
-          <span>Filtrar</span>
-    </div>
-</div>
+ <br>
+ <br>
+ <br>
 
 <div class="welcome">
     <h1>BIENVENIDO A WikiTV</h1>
 </div>
-
+<br>
 <main class="card-list-channels container">
     <a href="Canal.html" class="card-channels">
         <div class="card-img">
@@ -56,7 +52,7 @@
             </div>
         </div>
     </a>   
-    <a href="channel.html" class="card-channels">
+    <a href="canal5.html" class="card-channels">
         <div class="card-img">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Logotipo-Canal-5-M%C3%A9xico.png" alt="channel Canal 5" height="130"></img>
         </div>
@@ -69,7 +65,7 @@
             </div>
         </div>
     </a>
-    <a href="channel.html" class="card-channels">
+    <a href="mtv.html" class="card-channels">
         <div class="card-img">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/MTV-Logo.svg/2560px-MTV-Logo.svg.png" alt="channel MTV" height="130"></img>
         </div>
@@ -83,7 +79,7 @@
         </div>
     </a>
     
-    <a href="channel.html" class="card-channels">
+    <a href="Nickelodeon.html" class="card-channels">
         <div class="card-img">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nickelodeon_2023_logo_%28outline%29.svg/1280px-Nickelodeon_2023_logo_%28outline%29.svg.png" alt="channel Nickelodeon" height="130"></img>
         </div>
@@ -96,7 +92,7 @@
             </div>
         </div>
     </a>
-    <a href="channel.html" class="card-channels">
+    <a href="Jetix.html" class="card-channels">
         <div class="card-img">
             <img src="https://1000marcas.net/wp-content/uploads/2021/04/Jetix-Logo-640x400.png" alt="channel Jetix" height="130"></img>
         </div>
@@ -109,13 +105,13 @@
             </div>
         </div>
     </a>
-    <a href="channel.html" class="card-channels">
+    <a href="DisneyXD.html" class="card-channels">
         <div class="card-img">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Tiin_logo.png" alt="channel Tiin" height="130"></img>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/1200px-Disney_XD_-_2015.svg.png" alt="channel Tiin" height="130"></img>
         </div>
         <div class="card-info">
             <span class="channels-id">Canal 6</span>
-            <h3> Tiin </h3>
+            <h3> Disney XD </h3>
             <div class="channel-types">
                 <span class="Juvenil">Juvenil</span>
                 <span class="NoDisponibles">No Disponible</span>
@@ -123,14 +119,14 @@
         </div>
     </a>
     <dialog class="modal" id="modal">
-        <h2>An interesting title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse nisi, laboriosam illum temporibus ipsam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, quo.</p>
-        <button class="button close-button">close modal</button>
+        <h2>AGREGA UN CANAL</h2>
+        <p style="text-align: justify;">Si desea respaldar y contribuir con sugerencias para la expansión de contenido en esta Wiki, le invitamos cordialmente a completar el formulario adjunto en el caso de que desee proponer la inclusión de un nuevo canal. Agradecemos de antemano su participación y colaboración en el enriquecimiento de nuestra plataforma.</p>
+        
+        <button class="button close-button">Cerrar</button>
         <form class="form" method="dialog">
-          <label>Your name <input type="text"></label>
-          <label>Your email <input type="email"></label>
-          <button class="button" type="submit">submit form</button>
+          <label>Canal <input type="text"></label>
+          <label>Correo <input type="email"></label>
+          <button class="button" type="submit">Enviar</button>
         </form>
       </dialog>
 </main>

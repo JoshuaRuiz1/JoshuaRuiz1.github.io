@@ -279,9 +279,10 @@ header form{
 }
 
 .container-img-Canal{
-  order: 2;
+  order: 100;
   flex: 1;
   padding: 25px 25px 25px 0;
+  text-align: end;
 }
 
 .container-img-Canal img{
@@ -291,14 +292,13 @@ header form{
 .container-info-Canal{
     display: flex;
     flex-direction: column;
-
     order: 1;
     flex: 1;
 }
 
 .container-info-Canal h1{
-    text-align: right;
-    font-size: 50px;
+    text-align: left;
+    font-size: 80px;
 }
 
 .info-Canal{
@@ -328,7 +328,7 @@ body{
 
 footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 0.01rem 0.2%; /* Reducido el padding aún más */
@@ -338,7 +338,11 @@ footer {
     align-items: center;
     flex-direction: column;
     padding-bottom: 30px;
+    
 }
+
+/* Footer Hack*/
+@import url(footer-hack.css);
 
 /* Opcional: Ajusta la altura del logo en el footer si es necesario */
 .logo {
